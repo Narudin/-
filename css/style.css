@@ -8,6 +8,17 @@
   --light-grey: #EFEFEF;
 }
 
+.body._lock {
+  overflow: hidden;
+}
+.body._lock .main {
+  overflow: hidden;
+  filter: blur(4px);
+}
+.main {
+padding-top: 200px;
+}
+
 .container {
   max-width: 1140px;
   padding: 0 15px;
@@ -32,13 +43,17 @@
   min-height: 72px;
 }
 
-.header__logo {}
+.header__logo {
+  z-index: 10;
+}
 
 .header__menu {}
 
 .menu {}
 
-.menu__icon {}
+.menu__icon {
+  display: none;
+}
 
 .menu__body {}
 
